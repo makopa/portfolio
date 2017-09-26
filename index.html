@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />	
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	
 </head>
 <body>
 	
@@ -42,30 +44,105 @@
 	</section>
 
 <div class="clearfix"></div>
-	<a name="portfolio">
+<section class="parallax">
+		<div class="parallax-inner"></div>
+</section>
+	<a name="portfolio"></a>
 	<h2>My Portfolio</h2>
 
 	<section class="one-third-port">
-		<a href="#"><img src="img/photography-1.png" alt=""></a>
+		<h3 class=text-center>Local Weather App</h3>
+		<a href="" data-toggle="modal" data-target="#weather-modal"><img src="img/photography-1.png" alt=""></a>
+		<div class="modal fade" id="weather-modal"> <!-- modal start-->
+			<div class="modal-dialog modal-lg opacity" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header black">
+						<div class="modal-title text-center"><span class="title-modal">Local Weather</span>
+							<button type="button" class="close" data-dismiss="modal">
+								<span class="close-button">&times;</span>
+							</button>
+						</div>
+					</div> <!--modal header end-->
+
+					<div class="modal-body black">
+							<h1 class='text-center'><a href='#' id='toggle'><span id='currentTemp'>...</span></a></h1>
+	      					<h1 class='text-center'><span id='currentWeather'>...</span></h1>
+	      					<h1 class='text-center'><span id='currentWindSpeed'>...</span></h1><br>
+	      					Country: <span id='country'></span><br>
+	      					City: <span id='city'></span><br>
+	      					Latitude: <span id='latitude'></span><br>
+	      					Longitude: <span id='longitude'></span>
+					</div> <!--modal body end-->
+
+					<div class="modal-footer black">
+						<h3 class="text-center">API used in this weather application</h3>
+						<p>Weather API: <a href="https://openweathermap.org/api" target="_blank">https://openweathermap.org/api</a></p>
+						<p>Geolocation API: <a href="https://freegeoip.net" target="_blank">https://freegeoip.net</a></p>
+					</div> <!-- modal footer end-->
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="one-third-port">
+		<h3 class=text-center>Wikipedia Viewer App</h3>
+		<a href="" data-toggle="modal" data-target="#wikipedia-modal"><img src="img/photography-2.png"></a>
+		<div class="modal fade" id="wikipedia-modal"> <!-- modal start-->
+			<div class="modal-dialog modal-lg opacity" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header black">
+						<div class="modal-title text-center"><span class="title-modal">Wikipedia Viewer</span>
+							<button type="button" class="close" data-dismiss="modal">
+								<span class="close-button">&times;</span>
+							</button>
+						</div>
+					</div> <!--modal header end-->
+
+					<div class="modal-body black"> <!--modal body start-->
+    						<div class="input-group">
+      							<input type="text" class="form-control" placeholder="Search for..." id="search-field">
+      							<span class="input-group-btn">
+        							<button class="btn btn-primary" type="button" id="search-button">Go!</button>
+        							<button class="btn btn-info" type="button" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank')">Feeling Lucky?</button>
+     							</span>
+    						</div> <!--search field end-->
+    						<ul id="search-output" class="small-p">
+    						</ul>
+					</div> <!--modal body end-->
+
+					<div class="modal-footer black">
+						<h3 class="text-center">API used in this Wikipedia Viewer Application</h3>
+						<p>Wikipedia API: <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">https://www.mediawiki.org/wiki/API:Main_page</a></p>
+					</div> <!-- modal footer end-->
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="one-third-port">
+		<h3 class=text-center>Sample1</h3>
+		<a href=""><img src="img/photography-3.png" alt=""></a>
 	</section>
 	<section class="one-third-port">
-		<a href="#"><img src="img/photography-2.png" alt=""></a>
+		<h3 class=text-center>Sample2</h3>
+		<a href=""><img src="img/photography-4.png" alt=""></a>
 	</section>
 	<section class="one-third-port">
-		<a href="#"><img src="img/photography-3.png" alt=""></a>
+		<h3 class=text-center>Sample3</h3>
+		<a href=""><img src="img/photography-5.png" alt=""></a>
 	</section>
 	<section class="one-third-port">
-		<a href="#"><img src="img/photography-4.png" alt=""></a>
-	</section>
-	<section class="one-third-port">
-		<a href="#"><img src="img/photography-5.png" alt=""></a>
-	</section>
-	<section class="one-third-port">
-		<a href="#"><img src="img/photography-6.png" alt=""></a>
+		<h3 class=text-center>Sample4</h3>
+		<a href=""><img src="img/photography-6.png" alt=""></a>
 	</section>
 <!-- SERVICES -->
 <div class="clearfix"></div>
-	<a name="services">
+	<a name="services"></a>
 	<section class="left-col">
 		<h2>My Services</h2>
 		<p style="text-indent:6%">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean et quam justo. Morbi congue nisi sed sem volutpat facilisis. Maecenas at metus a dolor aliquet aliquet id in purus. Suspendisse ultrices vulputate metus ac venenatis. Nullam sodales sollicitudin justo, ut consectetur nunc scelerisque sed.</p>
@@ -73,19 +150,19 @@
 
 	<section class="sidebar">
 		<section class="contacts">
-			<p>Web Designing<br class="break">Web Development<br class="break">Mobile Development</p>
+			<p>Web Designing<br>Web Development<br>Mobile Development</p>
 		</section>
 	</section>
 
 <div class="clearfix"></div>
-	<a name="contacts">
+	<a name="contacts"></a>
 	<section class="parallax">
 		<div class="parallax-inner"></div>
 	</section>
 <div class="clearfix"></div>
 	<h2>Contact Me</h2>
-	<section class="contacts">
-		<p>Jordan Pagkatipunan <br class="break"><span id="myemail">jordan.pagkatipunan@gmail.com</span><br class="break"> (+63)921-566-9083</p>
+	<section class="contacts" >
+		<p><span id="myemail">jordan.pagkatipunan@gmail.com</span><br class="break"> (+63)921-566-9083</p>
 		<p>Taytay, Rizal 1920</p>
 	</section>
 
@@ -94,7 +171,6 @@
 	<ul class="social">
 		<li><a href="https://www.facebook.com/jordan.pagkatipunan" target="_blank"><i class='fa fa-facebook'></i></a></li>
 		<li><a href="https://github.com/makopa" target="_blank" ><i class='fa fa-github'></i></a></li>
-		<li><a href="#" target="_blank"><i class='fa fa-youtube'></i></a></li>
 		<li><a href="https://www.instagram.com/jordypipiw/" target="_blank"><i class='fa fa-instagram'></i></a></li>
 		<li><a href="https://twitter.com/Makopa_Fruit" target="_blank"><i class='fa fa-twitter'></i></a></li>
 	</ul>
@@ -104,5 +180,8 @@
 	<p>&copy; Jordan Pagkatipunan 2017</p>
 </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

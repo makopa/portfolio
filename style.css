@@ -31,6 +31,7 @@ img{
 	width: auto;
 	text-align: center;
 }
+
 /*START INTRO*/
 .intro{
 	width: 100%;
@@ -51,6 +52,10 @@ img{
 .content{
 	max-width: 600px;
 	margin: auto;
+}
+
+.intro h1{
+	color: #fff;
 }
 
 h1{
@@ -108,13 +113,15 @@ nav ul, nav:active ul{
 	width: 20%;
 	z-index: 1000;
 	left: 45px;
-	top: 60px;
+	top: 75px;
 }
 
 nav:hover ul{
 	display: block;
 	position: absolute;
 }
+
+
 
 #menu-icon{
 	width: 30px;
@@ -137,7 +144,7 @@ nav:hover ul{
 }
 
 .one-third-port{
-	width: 29.333333%;
+	width: 33%;
 	float: left;
 	padding: 2%;
 }
@@ -201,6 +208,52 @@ footer.second p{
 	padding: 5%; 
 	color: #fff;
 }
+.title-modal{ 
+	font-weight: 700;
+	font-size: 300%;
+	font-family: 'Raleway',serif;
+}
+
+body{
+  background: no-repeat center center fixed;
+  background-size: cover;
+  
+}
+.modal{
+	background: no-repeat center center fixed;
+  	background-size: cover;
+}
+.black{
+	background-color: black;
+}
+
+.modal-dialog{
+	background-color: black;
+ 	opacity: .75;
+  	color: white;
+}
+
+.close-button{
+	color: #fff;
+	font-size: 300%;
+}
+
+.modal-body{
+	font-size: 150%;
+	color: #fff;
+}
+
+.modal-footer p{
+	color: #fff;
+}
+#search-input{
+	width: 70%;
+}
+
+.white{
+	color: #fff;
+	font-size: 75%;
+}
 
 @media screen and (max-width: 768px) {
 	#menu-icon{
@@ -210,7 +263,7 @@ footer.second p{
 	nav ul, nav:active ul{
 		padding: 8px 0;
 		left: 20px;
-		top: 34px;
+		top: 50px;
 		width: 50%;
 		line-height: 80%;
 	}
@@ -245,7 +298,7 @@ footer.second p{
 	}
 
 	.one-third-port{
-		width: 96%;
+		width: 100%;
 		margin: 0 auto;
 		padding: 0;
 	}
