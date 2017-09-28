@@ -8,7 +8,7 @@
 //appid=70551d08bee698de3d8adde0347620ea
 
  //Link Scrolling Effects 
- $(document).ready(function(){
+ $(function(){
   $('a[href^="#"').on('click', function(e){
     e.preventDefault();
     
