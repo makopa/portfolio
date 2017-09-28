@@ -32,6 +32,10 @@ img{
 	text-align: center;
 }
 
+.li-format{
+	list-style: none;
+}
+
 /*START INTRO*/
 .intro{
 	width: 100%;
@@ -54,8 +58,10 @@ img{
 	margin: auto;
 }
 
-.intro h1{
+.intro h1, .intro h2{
 	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
 }
 
 h1{
@@ -151,6 +157,10 @@ nav:hover ul{
 
 .one-third-port img:hover{
 	opacity: 0.6;
+}
+
+.content-p{
+	font-size: 130%;
 }
 
 .contacts p{
