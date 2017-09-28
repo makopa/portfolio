@@ -7,6 +7,21 @@
 //>800 cloudy http://meship.com/Blog/wp-content/uploads/2011/06/cloud-forecast.jpg
 //appid=70551d08bee698de3d8adde0347620ea
 
+ //Link Scrolling Effects 
+ $(document).ready(function(){
+  $('a[href^="#"').on('click', function(e){
+    e.preventDefault();
+    
+    var target = this.hash;
+    var $target = $(target);
+
+    $('html,body').animate({
+      'scrollTop': $target.offset().top
+    }, 1000, 'swing');
+  });
+ });
+
+
 $(function(){ //WEATHER API START
   var F = false;
   var apiData;
@@ -53,7 +68,7 @@ $(function(){ //WEATHER API START
     $('#latitude').html(location.latitude);
     $('#longitude').html(location.longitude);
     
-    $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=&lat='+location.latitude+'&lon='+location.longitude+'&units=metric&appid=89c8e6c753fb4c78bc5b198b77de4e5b', function(data){
+    $.getJSON('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=&lat='+location.latitude+'&lon='+location.longitude+'&units=metric&appid=89c8e6c753fb4c78bc5b198b77de4e5b', function(data){
       
       apiData = data;
       console.log(apiData);

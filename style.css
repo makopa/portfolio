@@ -111,6 +111,12 @@ nav ul li a{
 
 nav ul li a:hover{
 	text-decoration: underline;
+	color: #FFF;
+}
+}
+
+nav ul li a:active{
+	color: #FFF;
 }
 
 nav ul, nav:active ul{
@@ -125,6 +131,10 @@ nav ul, nav:active ul{
 nav:hover ul{
 	display: block;
 	position: absolute;
+}
+
+.margin-top{
+	margin-top: 50px;
 }
 
 
