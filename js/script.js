@@ -68,7 +68,7 @@ $(function(){ //WEATHER API START
     $('#latitude').html(location.latitude);
     $('#longitude').html(location.longitude);
     
-    $.getJSON('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=&lat='+location.latitude+'&lon='+location.longitude+'&units=metric&appid=89c8e6c753fb4c78bc5b198b77de4e5b', function(data){
+    $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=&lat='+location.latitude+'&lon='+location.longitude+'&units=metric&appid=89c8e6c753fb4c78bc5b198b77de4e5b', function(data){
       
       apiData = data;
       console.log(apiData);
